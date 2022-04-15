@@ -1,38 +1,28 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+body {
+  font-family: 'Outfit', sans-serif; 
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fefefe;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 2em;
+  color: #1e1e1e;
 }
-
-.App-link {
-  color: #61dafb;
+.online::selection {
+  color: #229954;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.offline::selection {
+  color: #CB4335;
+}
+.status.online {
+  color: #CB4335;
+}
+.status.offline {
+  color: #229954;
+}
+.button {
+  display: none
 }

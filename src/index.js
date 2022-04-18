@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className={`App ${isDark ? "dark" : ""}`}>
       <div className="container">
-        <span className={`status ${status ? "online" : "offline"}`}>
+        You are <span className={`status ${status ? "online" : "offline"}`}>
           {status ? "Online" : "Offline"}
         </span>
       </div>
